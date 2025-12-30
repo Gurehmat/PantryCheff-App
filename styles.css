@@ -1,0 +1,157 @@
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+body { 
+    margin: 0; 
+    line-height: 1.5;
+}
+
+ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none;
+}
+
+
+a { 
+    text-decoration: none; 
+    display: inline-block;
+    color: inherit;
+}
+
+
+/* ============================================
+   LAYOUT
+   ============================================ */
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.brand h1 {
+    font-size: 24px;
+    color: #363636;
+
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.page_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0 16px 0;
+}
+
+.page_header h2 {
+    font-size: 22px;
+    color: #363636;
+}
+
+.search {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    background-color: #f1f3f5;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    padding: 8px 8px 8px 32px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.search:focus-within {
+    border: 2px solid #A9A9A9;
+}
+
+.search-input::placeholder {
+    color: #A9A9A9;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.nav-links {
+    flex: 1;  
+}
+
+.nav-links a {
+    color: #7E7E7E;
+    font-weight: 500;
+    padding: 8px 12px;
+}
+.nav-links a:hover {
+    color: #5E5E5E;
+}
+
+.nav-links a.active {
+    color: #363636;
+    font-weight: 600;
+}
+
+.nav-links ul {
+    display: flex; 
+    gap: 16px; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.brand {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+/* ============================================
+   BUTTONS & ICONS
+   ============================================ */
+.actions { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+}
+
+.iconbtn {
+    background: transparent;
+    border: none;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.iconbtn:hover {
+    background-color: #f1f3f5;
+}
+
+.search-icon{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #7E7E7E;
+}
