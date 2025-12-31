@@ -37,12 +37,50 @@
     <div class="container">
       <div class="page_header">
         <h2>Pantry</h2>
-        <button>Add Ingredients</button>
+        <button class="ingredient_button">
+          <i class="fa-solid fa-plus plus_icon"></i>
+          Add Ingredients
+        </button>
       </div>
       <div class="search-filter">
         <div class="search">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
           <input type="text" class="search-input" placeholder="Search ingredients..." />
+        </div>
+        <div class="chips">
+          <button type="button" class="chip chip--active">All</button>
+          <button type="button" class="chip">Produce</button>
+          <button type="button" class="chip">Dairy</button>
+          <button type="button" class="chip">Meat</button>
+          <button type="button" class="chip">Pantry</button>
+          <button type="button" class="chip">Spices</button>
+          <button type="button" class="chip">Frozen</button>
+          <button type="button" class="chip">Other</button>
+        </div>
+      </div>
+      <div class="pantry_items">
+        <div class="pantry_item">
+          <div class="item_left">
+            <div class="item_name-tag">
+              <div class="item_name">
+                Bananas
+              </div>
+              <div class="item_tag item_tag--produce">
+                Produce
+              </div>
+            </div>
+          </div>
+          <div class="item_quantity">
+              500g
+          </div>
+          <div class="item_actions">
+            <button class="iconbtn">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button class="iconbtn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
