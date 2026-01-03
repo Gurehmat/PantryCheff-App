@@ -71,13 +71,82 @@
             </div>
           </div>
           <div class="item_quantity">
-              500g
+              500 g
           </div>
           <div class="item_actions">
-            <button class="iconbtn">
+            <button class="iconbtn--actions">
               <i class="fa-solid fa-pencil"></i>
             </button>
-            <button class="iconbtn">
+            <button class="iconbtn--actions">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="pantry_item">
+          <div class="item_left">
+            <div class="item_name-tag">
+              <div class="item_name">
+                Chicken Breast
+              </div>
+              <div class="item_tag item_tag--meat">
+                Meat
+              </div>
+            </div>
+          </div>
+          <div class="item_quantity">
+              500 g
+          </div>
+          <div class="item_actions">
+            <button class="iconbtn--actions">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button class="iconbtn--actions">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="pantry_item">
+          <div class="item_left">
+            <div class="item_name-tag">
+              <div class="item_name">
+                Pasta
+              </div>
+              <div class="item_tag item_tag--produce">
+                Pantry
+              </div>
+            </div>
+          </div>
+          <div class="item_quantity">
+              500 g
+          </div>
+          <div class="item_actions">
+            <button class="iconbtn--actions">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button class="iconbtn--actions">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="pantry_item">
+          <div class="item_left">
+            <div class="item_name-tag">
+              <div class="item_name">
+                Milk
+              </div>
+              <div class="item_tag item_tag--produce">
+                Dairy
+              </div>
+            </div>
+          </div>
+          <div class="item_quantity">
+              500 g
+          </div>
+          <div class="item_actions">
+            <button class="iconbtn--actions">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button class="iconbtn--actions">
               <i class="fa-solid fa-trash"></i>
             </button>
           </div>
@@ -85,5 +154,56 @@
       </div>
     </div>
   </main>
+  <dialog class="modal_wrapper">
+    <div class="modal_title">
+      <h3>Add Ingredient</h3>
+      <button class="iconbtn--close_modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <form class="modal_form">
+      
+      <div class="field">
+        <label for="ingredient_name">Ingredient Name</label>
+        <input type="text" id="ingredient_name" name="ingredient_name" placeholder="e.g., Tomatoes" />  
+      </div>
+      
+      <div class="field-row">  
+        <label for="ingredient_quantity">Quantity</label>
+        <input type="number" id="ingredient_quantity" name="ingredient_quantity" placeholder="e.g., 1 kg" />
+
+        <label for="ingredient_unit">Unit</label>
+        <select id="ingredient_unit" name="ingredient_unit" placeholder="e.g., g, kg, L">
+          <option value="g">g</option>
+          <option value="kg">kg</option>
+          <option value="L">L</option>
+          <option value="mL">mL</option>
+          <option value="pcs">pcs</option>
+          <option value="cups">cups</option>
+          <option value="tbsp">tbsp</option>
+          <option value="tsp">tsp</option>
+        </select>   
+      </div>
+
+      <div class="field">
+        <label for="ingredient_category">Category</label>
+        <select id="ingredient_category" name="ingredient_category">
+          <option value="produce">Produce</option>
+          <option value="dairy">Dairy</option>
+          <option value="meat">Meat</option>
+          <option value="pantry">Pantry</option>
+          <option value="spices">Spices</option>
+          <option value="frozen">Frozen</option>
+          <option value="other">Other</option>
+        </select>  
+      </div>
+
+      <div class="modal_actions">
+        <button type="button" class="modal_btn modal_btn--secondary">Cancel</button>
+        <button type="submit" class="modal_btn modal_btn--primary">Add Ingredient</button>
+      </div>
+
+    </form>
+  </dialog>
 </body>
 </html>

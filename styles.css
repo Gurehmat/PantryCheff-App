@@ -128,10 +128,14 @@ a {
     display: flex;
     opacity: 0;
     flex-direction: row;
+    justify-content: flex-end;
+    width: 84px;
+    gap: 4px;
+    margin-left: 16px;
 }
 
 .pantry_item:hover {
-    box-shadow: 5px 5px 5px #7E7E7E;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.12);
 }
 
 .pantry_item:hover .item_actions { 
@@ -197,6 +201,23 @@ a {
     background-color: #f1f3f5;
 }
 
+.iconbtn--actions {
+    background: transparent;
+    border: none;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.iconbtn--actions:hover {
+    background-color: #f1f3f5;
+}
+
+
 .search-icon{
     position: absolute;
     top: 50%;
@@ -254,6 +275,6 @@ a {
     background-color: #e0e0e0;
     padding: 4px 8px;
     width: fit-content;
-    border-radius: 20px;
+    border-radius: 8px;
     border-color: transparent;
 }
