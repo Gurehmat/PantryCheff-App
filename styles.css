@@ -278,3 +278,34 @@ a {
     border-radius: 8px;
     border-color: transparent;
 }
+
+
+.item_tag--produce {
+    background-color: #C6F6D5;
+    color: #22543D;
+}
+
+.item_tag--dairy {
+    background-color: #BEE3F8;
+    color: #2A4365;
+}
+
+.item_tag--meat {
+    background-color: #FED7D7;
+    color: #742A2A;
+}
+
+.item_tag--pantry{
+    background-color: #FEEBC8;
+    color: #744210;
+}
+
+.item_tag--frozen{
+    background-color: #E2E8F0;
+    color: #1A202C;
+}
+
+.item_tag--spices{
+    background-color: #EDE9FE;
+    color: #44337A;
+}
