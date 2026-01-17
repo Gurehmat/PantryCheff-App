@@ -223,10 +223,10 @@
       </div>
     </div>
   </main>
-  <dialog class="modal_wrapper">
+  <dialog class="modal_wrapper" open>
     <div class="modal_title">
       <h3>Add Ingredient</h3>
-      <button class="iconbtn--close_modal">
+      <button type="button" class="iconbtn--close iconbtn" aria-label="Close dialog">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
@@ -237,22 +237,34 @@
         <input type="text" id="ingredient_name" name="ingredient_name" placeholder="e.g., Tomatoes" />  
       </div>
       
-      <div class="field-row">  
-        <label for="ingredient_quantity">Quantity</label>
-        <input type="number" id="ingredient_quantity" name="ingredient_quantity" placeholder="e.g., 1 kg" />
+      <div class="field-row">
+        <div class="field field--qty">
+          <label for="ingredient_quantity">Quantity</label>
+          <input
+            type="number"
+            id="ingredient_quantity"
+            name="ingredient_quantity"
+            placeholder="e.g., 500"
+            min="0"
+            step="any"
+          />
+        </div>
 
-        <label for="ingredient_unit">Unit</label>
-        <select id="ingredient_unit" name="ingredient_unit" placeholder="e.g., g, kg, L">
-          <option value="g">g</option>
-          <option value="kg">kg</option>
-          <option value="L">L</option>
-          <option value="mL">mL</option>
-          <option value="pcs">pcs</option>
-          <option value="cups">cups</option>
-          <option value="tbsp">tbsp</option>
-          <option value="tsp">tsp</option>
-        </select>   
+        <div class="field field--unit">
+          <label for="ingredient_unit">Unit</label>
+          <select id="ingredient_unit" name="ingredient_unit">
+            <option value="g">g</option>
+            <option value="kg">kg</option>
+            <option value="mL">mL</option>
+            <option value="L">L</option>
+            <option value="pcs">pcs</option>
+            <option value="cups">cups</option>
+            <option value="tbsp">tbsp</option>
+            <option value="tsp">tsp</option>
+          </select>
+        </div>
       </div>
+
 
       <div class="field">
         <label for="ingredient_category">Category</label>

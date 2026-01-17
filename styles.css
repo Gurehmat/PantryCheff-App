@@ -309,3 +309,125 @@ a {
     background-color: #EDE9FE;
     color: #44337A;
 }
+
+.modal_wrapper {
+  /* size */
+  width: min(560px, 92vw);
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* card look */
+  padding: 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  background: #fff;
+
+  /* remove the browser default dialog look */
+  outline: none;
+  margin: 0;
+}
+
+.iconbtn--close {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px; /* Figma uses slightly rounded, not full circle */
+  color: #5E5E5E;
+}
+
+.iconbtn--close:hover {
+  background: #f1f3f5;
+}
+
+.iconbtn--close:focus-visible {
+  outline: 2px solid #A9A9A9;
+  outline-offset: 2px;
+}
+
+
+.modal_wrapper::backdrop {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.modal_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.modal_title h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.modal_form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-row {
+  display: flex;
+  gap: 12px;
+}
+
+.field--qty {
+  flex: 1;
+}
+
+.field--unit {
+  width: 140px;
+}
+
+.modal_form input,
+.modal_form select {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  background: #f1f3f5;
+  font-size: 14px;
+}
+
+.modal_form input:focus,
+.modal_form select:focus {
+  outline: none;
+  border-color: #A9A9A9;
+  background: #fff;
+}
+
+.modal_actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.modal_btn {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.modal_btn--secondary {
+  background: #fff;
+  border-color: #E0E0E0;
+}
+
+.modal_btn--primary {
+  background: #000;
+  color: #fff;
+}
+
